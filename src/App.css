@@ -5,3 +5,143 @@ body{
   background-color: #2f2b2b;
   color: white;
 }
+
+.App {
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 1vh;
+}
+
+.info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.add-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+input[type="text"],
+button{
+  appearance: none;
+  outline: none;
+  border: 0;
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", cursive;
+  border-radius: 5px;
+}
+
+button{
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.add{
+  background-color: rgba(46, 161, 199, 0.884);
+  color: white;
+  font-weight: 600;
+}
+
+.search-input{
+  width: 200px;
+}
+
+.data-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  max-width: 350px;
+  word-wrap: break-word;
+  padding: 8px;
+  text-align: start;
+  color: #fff;
+}
+
+table td{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+table tr:hover{
+  background-color: #3f3c3c;
+}
+
+tr th {
+  min-width: 100px;
+}
+table th{
+  padding-top: 12px;
+  padding-left: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: #fff;
+  font-weight: 600;
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.edit{
+  text-transform: uppercase;
+  background-color: rgba(46, 161, 199, 0.884);
+  color: #fff;
+}
+
+.edit:hover{
+  background-color: rgb(106, 182, 208);
+}
+
+.delete{
+  text-transform: uppercase;
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.delete:hover{
+  background-color: rgb(255, 167, 167);
+}
+
+@media only screen and (max-width: 600px) {
+  tr th {
+    min-width: unset;
+  }
+
+  table td {
+    font-size: 14px;
+  }
+
+  .action{
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  button {
+    margin: 3px 0;
+  }
+}
